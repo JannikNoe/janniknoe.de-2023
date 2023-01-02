@@ -52,7 +52,7 @@ main {
         border-radius: 180px;
         display: flex;
         align-items: center;
-        gap: 4px; }
+        gap: 7px; }
         .cv-wrapper .cv-content-wrapper .cv-content-label-wrapper .cv-content-label-content img {
           width: 100%;
           max-width: 8px; }
@@ -129,6 +129,14 @@ main {
     padding: 40px 60px;
     gap: 30px; }
     .cv-wrapper h3 {
-      font-size: 3em; } }
+      font-size: 3em; }
+
+  .company-description {
+    line-height: 1.5; }
+
+  .cv-content-label-content {
+    padding: 6px 12px !important; }
+    .cv-content-label-content span {
+      font-size: 0.7em !important; } }
 
 /*# sourceMappingURL=about.css.map */

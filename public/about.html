@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="source/css/main.css">
     <link rel="stylesheet" href="source/css/about.css">
     <link rel="stylesheet" href="source/css/font.css">
+    <link rel="icon" type="image/x-icon" href="source/img/icons/favicon.png">
+    <script src="source/js/menu.js"></script>
     <title>Jannik Noe</title>
 </head>
 <body>
 
 <header>
-    <div class="header-menu-mobile" style="display: none;">
+    <div class="header-menu-mobile" style="display: none;" id="navmenu">
         <div class="mobile-header-menu-wrapper">
-            <h3>Start</h3>
-            <h3>Über mich</h3>
-            <div class="header-menu-mobil-project-wrapper">
+            <a href="index.html"><h3>Start</h3></a>
+            <a href="about.html"><h3>Über mich</h3></a>
+            <a href="projects.html"><div class="header-menu-mobil-project-wrapper">
                 <h3>Projekte</h3>
                 <div class="project-number">9</div>
+            </div></a>
+            <a href="mailto:jannik.noe@gmail.com?subject=Betreff%"><h3>Kontakt</h3></a>
+            <div class="mobile-header-open-icon" id="menu-button" onclick="menu()">
+                <button class=" header-menu-button">Zurück!</button>
             </div>
-            <h3>Start</h3>
         </div>
     </div>
     <div class="mobile-header">
         <div class="mobile-header-wrapper">
             <h3>Jannik Noe</h3>
-            <img src="source/img/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Menü Icon" id="mobile-header-icon">
+            <div class="mobile-header-open-icon" id="menu-button" onclick="menu()">
+                <img src="source/img/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Menü Icon" id="mobile-header-icon">
+            </div>
         </div>
     </div>
     <div class="content-1400">
@@ -38,7 +45,7 @@
                 <a class="nav-hover" href="index.html">Start</a>
                 <a class="nav-act nav-hover" href="">Über mich</a>
                 <div class="header-project-wrapper nav-hover">
-                    <a class= href="">Projekte</a>
+                    <a class="" href="projects.html">Projekte</a>
                     <h6 class="header-project-number">9</h6>
                 </div>
                 <a class="nav-hover" href="">Kontakt</a>
@@ -49,7 +56,7 @@
 <main>
     <section class="content-1400" id="about-headline">
         <div class="herobanner-wrapper">
-            <h3 class="headline-txt">Erfahre mehr über den <span style="color: #DEB500">UI/UX
+            <h3 class="headline-txt">Erfahre mehr über den <span style="color: #FFD000">UI/UX
                 Designer</span> hinter den Kulissen</h3>
             <p class="headline-caption-txt">Ich bin Jannik, 23 Jahre alt und aus Lüneburg. Seit 2021 arbeite ich als UI/UX Designer und studiere nebenbei Webdesign und Development an der SAE Hamburg.
                 <br /> <br />
@@ -62,7 +69,7 @@
 
     <section class= "content-1400" id="programs-wrapper">
         <div class="programs-txt">
-            <h4 class="second-headline"><span style="color: #DEB500">Programme</span>, die das Profil abrunden</h4>
+            <h4 class="second-headline"><span style="color: #FFD000">Programme</span>, die das Profil abrunden</h4>
             <p class="headline-caption-txt">Im laufe meines Studiums habe ich gelernt, wie
                 man Benutzererfahrungen durch das
                 Anwenden von Designprinzipien und
@@ -132,85 +139,137 @@
                         <span>AIC Group</span>
                     </div>
                 </div>
-                <h4 class="company-name">Werkstudent Unternehmens-
-                    Kommunikation</h4>
-                <p class="company-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <h4 class="company-name">Werkstudent Frontend Development</h4>
+                <p class="company-description">In meiner Tätigkeit als Werkstudent bei AIC Group GmbH kombiniere ich meine Kenntnisse im Bereich Webentwicklung mit meiner Kreativität. Ich erstelle Designs mit Adobe XD und setze diese professionell mittels Html, Css, Scss/Sass und Javascript um. </p>
             </div>
         </div>
 
-        <div class="cv-wrapper">
+        <div class="cv-wrapper cv-current">
             <h3>2</h3>
             <div class="cv-content-wrapper">
                 <div class="cv-content-label-wrapper">
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>Nov 2021 - Heute </span>
+                        <span>Jun 2021 - Heute </span>
                     </div>
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>AIC Group</span>
+                        <span>20North Germany</span>
                     </div>
                 </div>
-                <h4 class="company-name">Werkstudent Unternehmens-
-                    Kommunikation</h4>
-                <p class="company-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <h4 class="company-name">UI / UX Designer & Prokurist</h4>
+                <p class="company-description">In meiner Rolle als Gesellschafter der Muttergesellschaft der 20North Germany UG und UI/UX Designer/Frontend Developer bin ich für das Design von Benutzeroberflächen und -erlebnissen für alle Kundenprojekte zuständig. Dazu gehört das Erstellen von Screendesigns und UI-Konzeptionen sowie die Betreuung von Social-Recruiting-Kampagnen für ausgewählte Kunden. </p>
             </div>
         </div>
 
         <div class="cv-wrapper">
-            <h3>2</h3>
+            <h3>3</h3>
             <div class="cv-content-wrapper">
                 <div class="cv-content-label-wrapper">
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>Nov 2021 - Heute </span>
+                        <span>Mrz 2021 - Nov 2021 </span>
                     </div>
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>AIC Group</span>
+                        <span>Pflegediakonie</span>
                     </div>
                 </div>
                 <h4 class="company-name">Werkstudent Unternehmens-
                     Kommunikation</h4>
-                <p class="company-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <p class="company-description">Als Teil der Abteilung Unternehmenskommunikation und Bewerbermanagement bei der Pflegediakonie Hamburg-West/Südholstein gGmbH hatte ich die Chance, mich im Bereich Social-Media Management zu spezialisieren. Ich habe die Social-Media Accounts der Unternehmensgruppe verwaltet und gestaltet, indem ich regelmäßig Beiträge veröffentlichte und Follower betreute. Durch meine Tätigkeit habe ich wertvolle Erfahrungen im Bereich Online-Kommunikation gesammelt und konnte meine Fähigkeiten im Marketing vertiefen.</p>
             </div>
         </div>
 
         <div class="cv-wrapper">
-            <h3>2</h3>
+            <h3>4</h3>
             <div class="cv-content-wrapper">
                 <div class="cv-content-label-wrapper">
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>Nov 2021 - Heute </span>
+                        <span>Jun 2021 - Nov 2021 </span>
                     </div>
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>AIC Group</span>
+                        <span>Pride Digital</span>
                     </div>
                 </div>
-                <h4 class="company-name">Werkstudent Unternehmens-
-                    Kommunikation</h4>
-                <p class="company-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <h4 class="company-name">Co-Founder</h4>
+                <p class="company-description">Als Prokurist und Gesellschafter bei der Pride Digital GmbH habe ich das hauseigene Projekt "Junx.app" geleitet. Dazu gehörte das Verwalten der Social-Media-Kanäle, die Konzeption des Projekts, der Support für Nutzer und das UI/UX-Design. Junx.app war eine Social-Media-Plattform, die queeren Jugendlichen einen sicheren Ort bot, um sich auszutauschen und zu vernetzen, während sie gleichzeitig eine Plattform für die Förderung von Solidarität und Unterstützung innerhalb der Community bildete.</p>
             </div>
         </div>
 
         <div class="cv-wrapper">
-            <h3>2</h3>
+            <h3>5</h3>
             <div class="cv-content-wrapper">
                 <div class="cv-content-label-wrapper">
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>Nov 2021 - Heute </span>
+                        <span>Mrz 2021 - Jun 2021 </span>
                     </div>
                     <div class="cv-content-label-content">
                         <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
-                        <span>AIC Group</span>
+                        <span>Food and more Company / Lünekauf</span>
                     </div>
                 </div>
-                <h4 class="company-name">Werkstudent Unternehmens-
-                    Kommunikation</h4>
-                <p class="company-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <h4 class="company-name">Social-Media Manager</h4>
+                <p class="company-description">Als Social-Media-Manager bei der Food and more Company GmbH war ich für die Betreuung der Social-Media-Kanäle für den hauseigenen Account sowie den Account des Ladens Lünekauf verantwortlich. Zusätzlich erstellte ich Printprodukte für den Laden und lies diese anschließend drucken. Gemeinsam mit dem Geschäftsführer gründete ich die Pride Digital GmbH.</p>
+            </div>
+        </div>
+
+        <div class="cv-wrapper">
+            <h3>6</h3>
+            <div class="cv-content-wrapper">
+                <div class="cv-content-label-wrapper">
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>Nov 2020 - Mrz 2021 </span>
+                    </div>
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>ontiger media</span>
+                    </div>
+                </div>
+                <h4 class="company-name">Projektmanager</h4>
+                <p class="company-description">Als Projektmanager bei der ontiger media GmbH habe ich mich um das Projekt Junx.app gekümmert und die Social-Media-Accounts verwaltet. Ich habe mich auch im Bereich UI/UX-Design eingebracht und meine ersten Erfahrungen in der Webentwicklung gemacht. Leider musste die Agentur kurz vor dem Launch der App aufgrund von Corona Insolvenz anmelden. Trotzdem habe ich wichtige Kenntnisse im Bereich Online-Marketing und Webentwicklung erworben und konnte mich kontinuierlich weiterbilden.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content-1400" id="cv">
+        <h4 class="second-headline">Ausbildung und Zertifikate</h4>
+
+        <div class="cv-wrapper">
+            <div class="cv-content-wrapper">
+                <div class="cv-content-label-wrapper">
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>Sep 2023 - Sep 2024</span>
+                    </div>
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>SAE Institute Hamburg</span>
+                    </div>
+                </div>
+                <h4 class="company-name">Bachelor of Arts Web Development </h4>
+                <p class="company-description">Nach Abschluss des Diploma-Programms in Webdesign und Development an der SAE Hamburg werde ich im September 2023 den akademischen Teil des Studiums an der gleichen Universität absolvieren. Dieses Jahr werde ich mich vertiefend mit verschiedenen Aspekten des Fachgebiets auseinandersetzen.</p>
+            </div>
+        </div>
+        <div class="cv-wrapper">
+            <div class="cv-content-wrapper">
+                <div class="cv-content-label-wrapper">
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/date_range_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>Mrz 2022 - Sep 2023</span>
+                    </div>
+                    <div class="cv-content-label-content">
+                        <img src="source/img/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+                        <span>SAE Institute Hamburg</span>
+                    </div>
+                </div>
+                <h4 class="company-name">Diploma Web Development (90 ECTS)</h4>
+                <p class="company-description">Ich absolviere derzeit das Diploma in Webdesign und Development an der SAE Hamburg. In diesem Studium lerne ich alles rund um Webdevelopment, darunter HTML, CSS, SCSS, JavaScript, PHP und React. Für dieses erhalte ich 90 ECTS.</p>
             </div>
         </div>
 
@@ -221,8 +280,8 @@
 <footer>
     <div class="footer-wrapper">
         <div class="legal-wrapper">
-            <h5>Impressum</h5>
-            <h5>Datenschutz</h5>
+            <a href="https://20north.de/legal-notice/"><h5>Impressum</h5></a>
+            <a href="https://20north.de/privacy-policy/"><h5>Datenschutz</h5></a>
         </div>
         <h6>© 2023 Jannik Noe</h6>
     </div>

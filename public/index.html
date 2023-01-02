@@ -9,28 +9,36 @@
         <link rel="stylesheet" href="source/css/main.css">
         <link rel="stylesheet" href="source/css/homepage.css">
         <link rel="stylesheet" href="source/css/font.css">
+        <link rel="icon" type="image/x-icon" href="source/img/icons/favicon.png">
+        <script src="source/js/menu.js"></script>
         <title>Jannik Noe</title>
     </head>
     <body>
 
         <header>
-            <div class="header-menu-mobile" style="display: none;">
+            <div class="header-menu-mobile" style="display: none;" id="navmenu">
                 <div class="mobile-header-menu-wrapper">
-                    <h3>Start</h3>
-                    <h3>Über mich</h3>
-                    <div class="header-menu-mobil-project-wrapper">
+                    <a href="index.html"><h3>Start</h3></a>
+                    <a href="about.html"><h3>Über mich</h3></a>
+                    <a href="projects.html"><div class="header-menu-mobil-project-wrapper">
                         <h3>Projekte</h3>
                         <div class="project-number">9</div>
+                    </div></a>
+                    <a href="mailto:jannik.noe@gmail.com?subject=Betreff%"><h3>Kontakt</h3></a>
+                    <div class="mobile-header-open-icon" id="menu-button" onclick="menu()">
+                        <button class=" header-menu-button">Zurück!</button>
                     </div>
-                    <h3>Start</h3>
                 </div>
             </div>
             <div class="mobile-header">
                 <div class="mobile-header-wrapper">
                     <h3>Jannik Noe</h3>
-                    <img src="source/img/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Menü Icon" id="mobile-header-icon">
+                    <div class="mobile-header-open-icon" id="menu-button" onclick="menu()">
+                        <img src="source/img/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Menü Icon" id="mobile-header-icon">
+                    </div>
                 </div>
             </div>
+
             <div class="content-1400">
                 <div class="header-desktop-wrapper">
                     <h3>Jannik Noe</h3>
@@ -38,7 +46,7 @@
                         <a class="nav-act nav-hover" href="">Start</a>
                         <a class="nav-hover" href="about.html">Über mich</a>
                         <div class="header-project-wrapper nav-hover">
-                            <a class= href="">Projekte</a>
+                            <a class="" href="projects.html">Projekte</a>
                             <h6 class="header-project-number">9</h6>
                         </div>
                         <a class="nav-hover" href="">Kontakt</a>
@@ -54,7 +62,7 @@
                             und Frontend-
                             Entwickler</h3>
                         <p class="headline-caption-txt">mit Schwerpunkt auf Responsivität und Benutzerfreundlichkeit</p>
-                        <a href="#"><button class="primary-bttn">Zeigs mir!</button></a>
+                        <a href="projects.html"><button class="primary-bttn">Zeigs mir!</button></a>
                     </div>
                     <div class="herobanner-img">
                         <img src="source/img/mockups/mockup-polyroid-profiljanniknoe.png" alt="Hintergrund Shape in der Farbe Gelb">
@@ -76,7 +84,7 @@
                         <p class="headline-caption-txt">Website Design für den Partyveranstalter,
                             Podcaster und DJ Berry aka. Hollywood Tramp
                             aus Hamburg.</p>
-                        <a href="#"><button class="primary-bttn">Zeigs mir!</button></a>
+                        <a href="https://www.hollywoodtramp.de/"><button class="primary-bttn">Zeigs mir!</button></a>
                     </div>
                     <div class="homepage-project-one-img">
                         <img src="source/img/mockups/mockup-hollywoodtramp.png" alt="Hintergrund Shape in der Farbe Gelb">
@@ -90,7 +98,7 @@
                         <h5 class="headline-company-txt txt-green">Pflegediakonie</h5>
                         <h3 class="headline-txt">Hiring Made Easy</h3>
                         <p class="headline-caption-txt">Website- und Jobportal Design für die Pflegediakonie Hamburg-West/Südholstein und seinen Tochterfirmen.</p>
-                        <a href="#"><button class="primary-bttn">Zeigs mir!</button></a>
+                        <a href="https://jobs.pflegediakonie.de/"><button class="primary-bttn">Alte Website</button></a>
                     </div>
                     <div class="homepage-project-two-img">
                         <img src="source/img/mockups/mockup-pflegediakonieJobportal.png" alt="Hintergrund Shape in der Farbe Gelb">
@@ -106,19 +114,20 @@
                 <h3 class="headline-txt">Lass dich Überaschen</h3>
                 <p class="headline-caption-txt">Schau dir eine Auswahl meiner vergangenen Projekte an und sehen erlebe, wie meine Fähigkeiten im UI/UX Design in Aktion wirken.</p>
                 <div class="surprise-wrapper-buttons">
-                    <a href="#"><button class="primary-bttn">Erlebnis starten</button></a>
-                    <a href="#"><button class="secondary-bttn">Zurück zum Start</button></a>
+                    <a href="projects.html"><button class="primary-bttn">Erlebnis starten</button></a>
+                    <a href="#herobanner"><button class="secondary-bttn">Zurück zum Start</button></a>
                 </div>
                </section>
         </main>
         <footer>
             <div class="footer-wrapper">
                 <div class="legal-wrapper">
-                    <h5>Impressum</h5>
-                    <h5>Datenschutz</h5>
+                    <a href="https://20north.de/legal-notice/"><h5>Impressum</h5></a>
+                    <a href="https://20north.de/privacy-policy/"><h5>Datenschutz</h5></a>
                 </div>
                 <h6>© 2023 Jannik Noe</h6>
             </div>
         </footer>
+
     </body>
 </html>
